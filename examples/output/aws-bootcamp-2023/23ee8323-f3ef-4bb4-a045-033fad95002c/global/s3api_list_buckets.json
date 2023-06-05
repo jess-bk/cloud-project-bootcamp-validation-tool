@@ -1,0 +1,52 @@
+{
+    "Buckets": [
+        {
+            "Name": "assets.jessbkcloudcampus.com",
+            "CreationDate": "2023-04-11T15:23:19+00:00"
+        },
+        {
+            "Name": "aws-cloudtrail-jessbkcloudcampus-logs-517899574827-654ea763",
+            "CreationDate": "2023-02-17T18:25:54+00:00"
+        },
+        {
+            "Name": "cdk-hnb659fds-assets-517899574827-us-east-1",
+            "CreationDate": "2023-04-11T19:43:25+00:00"
+        },
+        {
+            "Name": "codepipeline-us-east-1-997793379367",
+            "CreationDate": "2023-04-20T16:24:24+00:00"
+        },
+        {
+            "Name": "cruddur-uploaded-avatars-jessbkcloudcampus",
+            "CreationDate": "2023-04-12T14:59:18+00:00"
+        },
+        {
+            "Name": "jessbk-cfn-artifacts",
+            "CreationDate": "2023-04-25T09:31:14+00:00"
+        },
+        {
+            "Name": "jessbk-codepipeline-cruddur-artifacts",
+            "CreationDate": "2023-05-15T18:32:44+00:00"
+        },
+        {
+            "Name": "jessbk-cpbvt-payloads",
+            "CreationDate": "2023-06-05T11:04:30+00:00"
+        },
+        {
+            "Name": "jessbk-cruddur-alb-access-logs",
+            "CreationDate": "2023-03-31T15:08:10+00:00"
+        },
+        {
+            "Name": "jessbkcloudcampus.com",
+            "CreationDate": "2023-05-17T08:07:28+00:00"
+        },
+        {
+            "Name": "www.jessbkcloudcampus.com",
+            "CreationDate": "2023-05-17T08:07:28+00:00"
+        }
+    ],
+    "Owner": {
+        "DisplayName": "victory187",
+        "ID": "36a2039bc5c0437ac4b464162b43f367741cd5ccf4a9cd80c4e6ae3a80a043d2"
+    }
+}
