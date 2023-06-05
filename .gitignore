@@ -14,6 +14,15 @@
 # Used by dotenv library to load environment variables.
 .env
 
+output/**/*
+output/**/**/*
+output/**/**/**/*
+output/**/**/**/**/*
+output/**/**/**/**/**/*
+output/**/*.json
+/output/**/*.json
+examples/output/**/*.json
+
 # Ignore Byebug command history file.
 .byebug_history
 
