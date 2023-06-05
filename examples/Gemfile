@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
+# gem "rails"
+
 gem 'cloud_project_bootcamp_validation_tool', path: "/workspace/cloud-project-bootcamp-validation-tool"
 gem 'dotenv', groups: [:development, :test]
 gem 'rake'
