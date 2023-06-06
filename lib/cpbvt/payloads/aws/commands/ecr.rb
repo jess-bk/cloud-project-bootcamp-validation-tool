@@ -11,5 +11,12 @@ module Cpbvt::Payloads::Aws::Commands::Ecr
   COMMAND
   end
   
+  def ecr_describe_images(region:, output_file:)
+    command = <<~COMMAND.strip.gsub("\n", " ")
+  aws ecr describe-images \
+  --region #{region} --output json > #{output_file}
+  COMMAND
+  end
+  
   # ------
   end; end

@@ -26,5 +26,6 @@ module Cpbvt::Payloads::Aws::Commands::Lambda
   --region #{region} --output json > #{output_file}
   COMMAND
   end
+  
   # ------
   end; end
