@@ -1,22 +1,19 @@
-module Cpbvt::Payloads::Aws::Commands::Ecr
+module Cpbvt::Payloads::Aws::CommandsModules::Servicediscovery
   def self.included base; base.extend ClassMethods; end
   module ClassMethods
   # ------
-  
-  # listing ecr repos
-  def ecr_describe_repositories(region:, output_file:)
+  def servicediscovery_list_services(region:, output_file:)
     command = <<~COMMAND.strip.gsub("\n", " ")
-  aws ecr describe-repositories \
+  aws servicediscovery list-services \
   --region #{region} --output json > #{output_file}
   COMMAND
   end
   
-  def ecr_describe_images(region:, output_file:)
+  def servicediscovery_list_namespaces(region:, output_file:)
     command = <<~COMMAND.strip.gsub("\n", " ")
-  aws ecr describe-images \
+  aws servicediscovery list-namespaces \
   --region #{region} --output json > #{output_file}
   COMMAND
   end
-  
   # ------
   end; end

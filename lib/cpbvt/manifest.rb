@@ -24,7 +24,6 @@ class Cpbvt::Manifest
     # It sets the start and end timestamps to the current time, and initializes the payloads as an empty hash.
 
     @starts_at = Time.now.to_i
-    @ends_at = Time.now.to_i
     @user_uuid = user_uuid
     @run_uuid = run_uuid
     @project_scope = project_scope
@@ -78,7 +77,7 @@ class Cpbvt::Manifest
   def write_file
     # This method writes the contents of the manifest to a file.
     # The manifest contents are serialized as JSON and written to the output file.
-
+    @ends_at = Time.now.to_i
     File.open(self.output_file, 'w') do |f|
       f.write(JSON.pretty_generate(self.contents))
     end

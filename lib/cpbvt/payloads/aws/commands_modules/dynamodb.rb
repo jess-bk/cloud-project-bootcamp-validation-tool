@@ -1,19 +1,21 @@
-module Cpbvt::Payloads::Aws::Commands::Ec2
+module Cpbvt::Payloads::Aws::CommandsModules::Dynamodb
   def self.included base; base.extend ClassMethods; end
   module ClassMethods
   # ------
-  
-  def codepipeline_list_pipelines(region:, output_file:)
+    
+  # list dynamodb tables
+  def dynamodb_list_tables(region:, output_file:)
     command = <<~COMMAND.strip.gsub("\n", " ")
-  aws codepipeline list-pipelines \
+  aws dynamodb list-tables \
   --region #{region} --output json > #{output_file}
   COMMAND
   end
   
-  def codepipeline_get_pipeline(region::, output_file:, pipeline_name:)
+  def dynamodb_describe_table(region:, output_file:, table_name:)
     command = <<~COMMAND.strip.gsub("\n", " ")
-  aws codepipeline get-pipeline \
-  --name #{pipeline_name} \
+  aws dynamodb \
+  describe-table \
+  --table-name #{table_name} \
   --region #{region} --output json > #{output_file}
   COMMAND
   end
