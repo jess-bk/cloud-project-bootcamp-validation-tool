@@ -3,7 +3,7 @@ module Cpbvt::Payloads::Aws::Commands::CognitoIdp
   module ClassMethods
   # ------
     
-  def cognito_describe_user_pool(region: user_pool_id:, output_file:)
+  def cognito_describe_user_pool(region: output_file:, :user_pool_id)
     command = <<~COMMAND.strip.gsub("\n", " ")
   aws cognito-idp describe-user-pool \
   --user-pool-id #{user_pool_id} \
