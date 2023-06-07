@@ -11,12 +11,12 @@ module Cpbvt::Payloads::Aws::CommandsModules::Acm
   COMMAND
   end
   
+  
   def acm_list_certificates(region:, output_file:)
     command = <<~COMMAND.strip.gsub("\n", " ")
       aws acm list-certificates \
       --region #{region} --output json > #{output_file}
   COMMAND
   end
-  
   # ------
   end; end

@@ -1,4 +1,5 @@
 require 'time'
+require 'json'
 
 # Represents a Manifest for a set of payloads
 class Cpbvt::Manifest
@@ -71,6 +72,13 @@ class Cpbvt::Manifest
     # It takes a key to identify the payload and the corresponding data to be stored.
 
     @payloads[key] = data
+  end
+
+  def get_output key
+    output_file = @payloads[key][:output_file]
+    json_data = File.read(output_file)
+    hash = JSON.parse(json_data)
+    return hash
   end
 
   # Writes the manifest contents to a file
